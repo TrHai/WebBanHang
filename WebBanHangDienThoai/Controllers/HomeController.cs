@@ -20,7 +20,8 @@ namespace WebBanHangDienThoai.Controllers
         }
         public ActionResult MenuPartial()
         {
-            return PartialView();
+            var lstSP = db.SanPhams;
+            return PartialView(lstSP);
         }
     }
 }

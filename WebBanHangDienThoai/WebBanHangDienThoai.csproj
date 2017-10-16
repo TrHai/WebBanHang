@@ -436,7 +436,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\SanPham\SanPhamStyle1Partial.cshtml" />
     <Content Include="Views\SanPham\SanPhamStyle2Partial.cshtml" />
-    <Content Include="Views\Layout\ProductLayout.cshtml" />
     <Content Include="Views\SanPham\XemChiTiet.cshtml" />
     <Content Include="Views\Home\MenuPartial.cshtml" />
   </ItemGroup>

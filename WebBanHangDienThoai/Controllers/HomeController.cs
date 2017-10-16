@@ -15,7 +15,12 @@ namespace WebBanHangDienThoai.Controllers
         {
             var lstDTM = db.SanPhams.Where(n => n.MaLoaiSP == 1 && n.Moi == 1 && n.DaXoa==0);
             ViewBag.ListDTM = lstDTM;
+
             return View();
+        }
+        public ActionResult MenuPartial()
+        {
+            return PartialView();
         }
     }
 }

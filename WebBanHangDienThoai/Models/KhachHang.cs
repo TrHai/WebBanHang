@@ -20,15 +20,13 @@ namespace WebBanHangDienThoai.Models
             this.DonDatHangs = new HashSet<DonDatHang>();
         }
     
-        public int MaKH { get; set; }
+        public string Email { get; set; }
         public string TenKH { get; set; }
         public string DiaChi { get; set; }
-        public string Email { get; set; }
         public string SoDienThoai { get; set; }
-        public Nullable<int> MaThanhVien { get; set; }
+        public string MatKhau { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonDatHang> DonDatHangs { get; set; }
-        public virtual ThanhVien ThanhVien { get; set; }
     }
 }

@@ -25,7 +25,7 @@ namespace WebBanHangDienThoai.Models
         public Nullable<bool> TinhTrangGiaoHang { get; set; }
         public Nullable<System.DateTime> NgayGiao { get; set; }
         public Nullable<bool> DaThanhToan { get; set; }
-        public Nullable<int> MaKH { get; set; }
+        public string Email { get; set; }
         public Nullable<int> UuDai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

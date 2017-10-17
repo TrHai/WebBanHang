@@ -12,12 +12,11 @@ namespace WebBanHangDienThoai.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class KhachHang
+    public partial class C__MigrationHistory
     {
-        public string Email { get; set; }
-        public string TenKH { get; set; }
-        public string DiaChi { get; set; }
-        public string SoDienThoai { get; set; }
-        public string MatKhau { get; set; }
+        public string MigrationId { get; set; }
+        public string ContextKey { get; set; }
+        public byte[] Model { get; set; }
+        public string ProductVersion { get; set; }
     }
 }

@@ -12,24 +12,18 @@ namespace WebBanHangDienThoai.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DonDatHang
+    public partial class AspNetRole
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DonDatHang()
+        public AspNetRole()
         {
-            this.ChiTietDonDatHangs = new HashSet<ChiTietDonDatHang>();
+            this.AspNetUsers = new HashSet<AspNetUser>();
         }
     
-        public int MaDDH { get; set; }
-        public Nullable<System.DateTime> NgayDat { get; set; }
-        public Nullable<bool> TinhTrangGiaoHang { get; set; }
-        public Nullable<System.DateTime> NgayGiao { get; set; }
-        public Nullable<bool> DaThanhToan { get; set; }
-        public string UserId { get; set; }
-        public Nullable<int> UuDai { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     
-        public virtual AspNetUser AspNetUser { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietDonDatHang> ChiTietDonDatHangs { get; set; }
+        public virtual ICollection<AspNetUser> AspNetUsers { get; set; }
     }
 }

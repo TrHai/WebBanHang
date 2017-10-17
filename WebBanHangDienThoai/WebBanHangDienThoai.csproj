@@ -204,6 +204,24 @@
       <DependentUpon>201710170156542_AddForUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SanPhamController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\BinhLuan.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
@@ -211,6 +229,9 @@
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ChiTietPhieuNhap.cs">
+      <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\dbQuanLyBanHang.Context.cs">
@@ -231,7 +252,7 @@
     <Compile Include="Models\DonDatHang.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\KhachHang.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
@@ -241,6 +262,7 @@
     <Compile Include="Models\LoaiThanhVien.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NhaCungCap.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
@@ -253,21 +275,15 @@
     <Compile Include="Models\SanPham.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ThanhVien.cs">
       <DependentUpon>dbQuanLyBanHang.tt</DependentUpon>
     </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\GioHang.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -382,6 +398,10 @@
     <Content Include="Content\js\modernizr.custom.js" />
     <Content Include="Content\js\move-top.js" />
     <Content Include="Content\js\responsiveslides.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
     <Content Include="Models\dbQuanLyBanHang.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>dbQuanLyBanHang.edmx</DependentUpon>
@@ -392,10 +412,6 @@
       <DependentUpon>dbQuanLyBanHang.edmx</DependentUpon>
       <LastGenOutput>dbQuanLyBanHang.cs</LastGenOutput>
     </Content>
-    <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -455,6 +471,12 @@
     <Content Include="Views\Account\SendCode.cshtml" />
     <Content Include="Views\Account\VerifyCode.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

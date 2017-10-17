@@ -13,9 +13,13 @@ namespace WebBanHangDienThoai.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            //List Dien thoai moi
             var lstDTM = db.SanPhams.Where(n => n.MaLoaiSP == 1 && n.Moi == 1 && n.DaXoa==0);
             ViewBag.ListDTM = lstDTM;
 
+            //List LapTop moi
+            var lstLTM = db.SanPhams.Where(n => n.MaLoaiSP == 2 && n.Moi == 1 && n.DaXoa == 0);
+            ViewBag.ListLTM = lstLTM;
             return View();
         }
         public ActionResult MenuPartial()

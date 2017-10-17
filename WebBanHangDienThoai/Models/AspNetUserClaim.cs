@@ -12,12 +12,13 @@ namespace WebBanHangDienThoai.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class KhachHang
+    public partial class AspNetUserClaim
     {
-        public string Email { get; set; }
-        public string TenKH { get; set; }
-        public string DiaChi { get; set; }
-        public string SoDienThoai { get; set; }
-        public string MatKhau { get; set; }
+        public int Id { get; set; }
+        public string UserId { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
+    
+        public virtual AspNetUser AspNetUser { get; set; }
     }
 }

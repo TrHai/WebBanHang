@@ -30,8 +30,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="header" id="home">
         <div class="container">
             <ul>
-                <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Đăng nhập </a></li>
-                <li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+                @*<li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Đăng nhập </a></li>*@
+                <li><i class="fa fa-unlock-alt"></i>  @Html.ActionLink("Đăng Nhập", "Login", "Account")</li>
+                @*<li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Đăng kí </a></li>*@
+                <li ><i class="fa fa-pencil-square-o"></i>  @Html.ActionLink("Đăng kí", "Register", "Account")</li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
                 <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
             </ul>
@@ -266,10 +268,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //Modal1 -->
     <!-- Modal2 -->
+   
     <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content">
+            @Html.Action("Register","Account")
+            @*<div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
                 </div>
@@ -334,7 +338,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="clearfix"></div>
                 </div>
-            </div>
+            </div>*@
             <!-- //Modal content-->
         </div>
     </div>
@@ -1765,6 +1769,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- login -->
     <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
+         
             <div class="modal-content modal-info">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>

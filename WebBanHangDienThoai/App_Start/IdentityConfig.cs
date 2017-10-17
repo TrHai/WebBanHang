@@ -54,10 +54,11 @@ namespace WebBanHangDienThoai
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
+                //   RequireNonLetterOrDigit = true, //ki tu dac biet
+                RequireDigit = true,     //ki tu so
                 RequireLowercase = true,
-                RequireUppercase = true,
+                //   RequireUppercase = true,
+           
             };
 
             // Configure user lockout defaults
